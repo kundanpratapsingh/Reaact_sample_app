@@ -34,3 +34,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
+
+## Description about application
+
+This application is Based on MERN stack.Once the React Application starts it will fetch Items from MongoDB using
+http://localhost:5001/api/items/ api.
+
+Each Time User ADD a new Item or Delete Any Item different Endpoints are being Triggered and DB is Being updated.
+
+All React Components are StateLess Components and State is declared Using useState Hooks.
