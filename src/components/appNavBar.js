@@ -16,7 +16,7 @@ const Example = props => {
 
   return (
     <div>
-      <Navbar color="dark" dark>
+      <Navbar color="success" light>
         <NavbarBrand href="/" className="mr-auto">
           ShoppingList
         </NavbarBrand>
@@ -28,6 +28,9 @@ const Example = props => {
                 GitHub
               </NavLink>
             </NavItem>
+          </Nav>
+          <Nav navbar>
+            <NavItem>Total Items</NavItem>
           </Nav>
         </Collapse>
       </Navbar>

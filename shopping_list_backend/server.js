@@ -16,11 +16,10 @@ app.use("/api/items", items);
 //connect to Port
 
 const db = require("./config/keys");
-console.log(db, "-------------");
 mongoose
   .connect(db.url)
   .then(() => {
-    console.log("MONGOO CONNected........");
+    console.log("MONGOO CONNECTED........");
   })
   .catch(err => {
     console.log(err);

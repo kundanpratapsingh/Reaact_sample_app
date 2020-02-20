@@ -19,7 +19,6 @@ const ItemsList = () => {
         console.log(err);
       });
   }
-
   function deleteItemfunction(e) {
     let idtodelete = e.target.id;
     let url = `http://localhost:5001/api/items/${idtodelete}`;
