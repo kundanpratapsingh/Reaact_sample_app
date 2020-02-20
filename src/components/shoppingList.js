@@ -43,7 +43,7 @@ const ItemsList = () => {
     <Container className="container">
       <Button
         onClick={() => {
-          const name = prompt("Enter Item");
+          const name = prompt("Enter Item To Insert");
           if (name) {
             addItemfunction(name);
           }
