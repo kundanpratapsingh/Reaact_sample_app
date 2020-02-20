@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { ListGroup, ListGroupItem, Button, Container } from "reactstrap";
-import shoppingList from "../styles/shoppingList.css";
+import "../styles/shoppingList.css";
 import axios from "axios";
 
 const ItemsList = () => {
   const [items, setItems] = useState([]);
-  const [sendRequest, setSendRequest] = useState(false);
 
   function addItemfunction(name) {
     let data = {
@@ -14,9 +13,7 @@ const ItemsList = () => {
     axios
       .post("http://localhost:5001/api/items", data)
       .then(res => {
-        setItems([...items, { id: res.data._id, name }]);
-        setSendRequest(true);
-        setSendRequest(false);
+        setItems([...items, res.data]);
       })
       .catch(err => {
         console.log(err);
@@ -40,7 +37,7 @@ const ItemsList = () => {
       .catch(err => {
         console.log(err);
       });
-  }, [sendRequest]);
+  }, []);
 
   return (
     <Container className="container">
@@ -56,7 +53,6 @@ const ItemsList = () => {
         Add Item
       </Button>{" "}
       <ListGroup>
-        {console.log(items, "999999999999999999")}
         {items.map(item => (
           <ListGroupItem key={item._id}>
             <Button
