@@ -52,7 +52,7 @@ const ItemsList = () => {
       >
         Add Item
       </Button>{" "}
-      <ListGroup>
+      <ListGroup className="list-container">
         {items.map(item => (
           <ListGroupItem key={item._id}>
             <Button

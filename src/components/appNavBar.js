@@ -24,7 +24,7 @@ const Example = props => {
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">
+              <NavLink href="https://github.com/kundanpratapsingh/React_sample_app">
                 GitHub
               </NavLink>
             </NavItem>
