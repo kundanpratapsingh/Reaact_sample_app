@@ -1,6 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-Screenshots are added in Issues Section in Git Repo (https://github.com/kundanpratapsingh/React_sample_app/issues)
+Screenshots:
 https://user-images.githubusercontent.com/41427831/74939720-617fca80-5416-11ea-8861-946522fa3887.png
+https://user-images.githubusercontent.com/41427831/74940215-1dd99080-5417-11ea-86d2-453797b65296.png
+https://user-images.githubusercontent.com/41427831/74940353-4f525c00-5417-11ea-83ef-94c2eb35d6c9.png
+https://user-images.githubusercontent.com/41427831/74940503-87f23580-5417-11ea-8ae9-39d92b9ff01d.png
 
 ### Steps to run the application Locally
 
