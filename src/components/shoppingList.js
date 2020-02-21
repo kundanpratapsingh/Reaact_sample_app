@@ -67,7 +67,7 @@ const ItemsList = () => {
             >
               Remove
             </Button>
-            {item.name} <br /> {item._id}
+            {item.name} <br /> {`ID: ${item._id}`}
           </ListGroupItem>
         ))}
       </ListGroup>
