@@ -5,6 +5,7 @@ import axios from "axios";
 
 const ItemsList = () => {
   const [items, setItems] = useState([]);
+  const [insertordelete, setinsertordelete] = useState(false);
 
   function addItemfunction(name) {
     let data = {
@@ -14,6 +15,7 @@ const ItemsList = () => {
       .post("http://localhost:5001/api/items", data)
       .then(res => {
         setItems([...items, res.data]);
+        setinsertordelete(!insertordelete);
       })
       .catch(err => {
         console.log(err);
@@ -24,6 +26,7 @@ const ItemsList = () => {
     let url = `http://localhost:5001/api/items/${idtodelete}`;
     axios.delete(url, idtodelete).then(res => {
       setItems([...items.filter(item => item._id !== idtodelete)]);
+      setinsertordelete(!insertordelete);
     });
   }
 
@@ -36,7 +39,7 @@ const ItemsList = () => {
       .catch(err => {
         console.log(err);
       });
-  }, []);
+  }, [insertordelete]);
 
   return (
     <Container className="container">
