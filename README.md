@@ -14,9 +14,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### Steps to run the application Locally
 
-# connect with MongoDB Compass
+## Connect with MongoDB Compass
 
-https://docs.mongodb.com/compass/master/connect/
+https://docs.mongodb.com/compass/master/connect/ <br/>
 url to connect(example) --- mongodb://localhost:27017/mernshopping
 
 ## To run Server
